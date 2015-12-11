@@ -101,7 +101,7 @@
 
     <!-- see: https://build.phonegap.com/plugins/1246 -->
     <gap:plugin name="com.phonegap.plugins.facebookconnect" source="pgb" version="0.9.0">
-        <param name="APP_ID" value="MISSING" />
+        <param name="APP_ID" value="1628373070747684" />
         <param name="APP_NAME" value="Yatzy" />
     </gap:plugin>
 
