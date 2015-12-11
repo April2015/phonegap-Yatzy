@@ -3,18 +3,18 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         xmlns:android   = "http://schemas.android.com/apk/res/android"
-        id          = "com.gamingplatform.abalone"
-        versionCode = "13"
-        version     = "13.0.0" >
+        id          = "com.gamingplatform.yatzy"
+        versionCode = "1"
+        version     = "1.0.0" >
     <!-- versionCode is optional and Android only:
       needs to be increased every time you submit a new APK version.
       see: http://developer.android.com/tools/publishing/versioning.html
     -->
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-      <string>300</string>
+      <string>100</string>
     </gap:config-file>
 
-    <name>Abalone</name>
+    <name>Yatzy</name>
     <author email="yanhongoy@gmail.com">
         yanhongoy@gmail.com
     </author>
@@ -101,8 +101,8 @@
 
     <!-- see: https://build.phonegap.com/plugins/1246 -->
     <gap:plugin name="com.phonegap.plugins.facebookconnect" source="pgb" version="0.9.0">
-        <param name="APP_ID" value="648928858542812" />
-        <param name="APP_NAME" value="Abalone" />
+        <param name="APP_ID" value="MISSING" />
+        <param name="APP_NAME" value="Yatzy" />
     </gap:plugin>
 
     <!--
@@ -141,7 +141,7 @@
     <gap:plugin name="nl.x-services.plugins.socialsharing" source="pgb" version="4.3.0" />
 
     <!-- To launch the app by a link like this (you can't type it in directly in the browser! it has to be a link on a webpage):
-        abalone://
+        yatzy://
         For iOS, see
           http://docs.build.phonegap.com/en_US/configuring_custom_urls.md.html
         For android, see
@@ -153,7 +153,7 @@
     <gap:config-file platform="android" parent="/manifest/application" mode="add" >
       <activity
           android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-          android:name=".Abalone" android:label="@string/app_name"
+          android:name=".Yatzy" android:label="@string/app_name"
           android:screenOrientation="unspecified"
           android:launchMode="singleTask"
           android:windowSoftInputMode="adjustUnspecified|stateUnspecified">
@@ -165,11 +165,11 @@
           <action android:name="android.intent.action.VIEW"/>
           <category android:name="android.intent.category.DEFAULT"/>
           <category android:name="android.intent.category.BROWSABLE"/>
-          <data android:scheme="abalone"/>
+          <data android:scheme="yatzy"/>
         </intent-filter>
       </activity>
     </gap:config-file>
     <gap:url-scheme>
-      <scheme>abalone</scheme>
+      <scheme>yatzy</scheme>
     </gap:url-scheme>
 </widget>

@@ -1,2 +1,2 @@
-# phonegap-Abalone
-Phonegap wrapper for Abalone
+# phonegap-Yatzy
+Phonegap wrapper for Yatzy
